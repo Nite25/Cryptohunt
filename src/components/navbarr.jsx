@@ -30,7 +30,7 @@ const Navbarr1 = () => {
         <div className='logo-container'>
             <Avatar src="https://i.ibb.co/Z11pcGG/cryptocurrency.png" className='logoimage' size="large"></Avatar>
             <Typography.Title level={2} className='logo'>
-                <Link to="/">Cryptohunt</Link>
+                <Link to="/Cryptohunt/">Cryptohunt</Link>
             </Typography.Title>
             <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined style={{color:"white"}}/></Button>
           </div>
@@ -45,7 +45,7 @@ const Navbarr1 = () => {
             {activeMenu && <div>
             <Menu theme='dark'>
               <Menu.Item icon={<HomeOutlined/>}>
-                <Link to="/"/>Home
+                <Link to="/Cryptohunt/"/>Home
               </Menu.Item>
               <Menu.Item icon={<FundOutlined/>}>
               <Link to="/cryptocurrencies"/>Cryptocurrencies
