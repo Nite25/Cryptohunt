@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Cryptohunt/static/css/main.780aff44.css",
-    "main.js": "/Cryptohunt/static/js/main.6dec5848.js",
-    "index.html": "/Cryptohunt/index.html",
-    "main.780aff44.css.map": "/Cryptohunt/static/css/main.780aff44.css.map",
-    "main.6dec5848.js.map": "/Cryptohunt/static/js/main.6dec5848.js.map"
+    "main.css": "/home/static/css/main.780aff44.css",
+    "main.js": "/home/static/js/main.6dec5848.js",
+    "index.html": "/home/index.html",
+    "main.780aff44.css.map": "/home/static/css/main.780aff44.css.map",
+    "main.6dec5848.js.map": "/home/static/js/main.6dec5848.js.map"
   },
   "entrypoints": [
     "static/css/main.780aff44.css",
