@@ -9,7 +9,10 @@
 /coverage
 
 # production
-/src/services
+/build
+/src/services/coinexchanges.js
+/src/services/cryptoApi.js
+/src/services/newsApi.js
 # misc
 .DS_Store
 .env.local
