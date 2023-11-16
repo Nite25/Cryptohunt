@@ -17,7 +17,7 @@ const Homepage = () => {
 
   return (
     <>
-    <Typography.Title level={2} className='heading'>
+    <Typography.Title level={3} className='heading'>
       
         <span className='heading1'>Global Cryptocurrencies Statistics</span>
         <br></br>
@@ -34,7 +34,7 @@ const Homepage = () => {
     </Typography.Title>
 
     <div className='home-heading-container'>
-      <Typography.Title level={2} className='home-title'>
+      <Typography.Title level={3} className='home-title'>
         <span>Top 10 Cryptocurrencies coins in the world</span>
         </Typography.Title>
 
@@ -43,7 +43,8 @@ const Homepage = () => {
 <Cryptocurrencies simplified={true}></Cryptocurrencies>
 
     <div className='home-heading-container'>
-      <Typography.Title level={2} className='home-title'>Latest Crypto News</Typography.Title>
+      <Typography.Title level={3} className='home-title'>
+        <span className='heading2'>Latest Crypto News</span></Typography.Title>
 
       <Typography.Title level={5} className='show-more'><Link to="/news">Show more...</Link></Typography.Title>
     </div>

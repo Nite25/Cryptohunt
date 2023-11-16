@@ -8,6 +8,7 @@
    --pink: #0071bd;
    --light-blue: #e6f7ff;
    --border: #d9d9d9;
+   --nav: rgb(0, 21, 41);
 }
 
 * {
@@ -16,7 +17,9 @@
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
 }
-
+html{
+    background-color: #f5f5f5;
+}
 a:hover{
     color: var(--pink) !important;
 }
@@ -38,6 +41,7 @@ a:hover{
 }
 .routes{
     padding: 20px;
+    height:max-content;
 }
 .skelthon1{
     /* border:1px solid red; */
@@ -52,7 +56,7 @@ a:hover{
     margin: 10px;
     height: 100vh;
     margin: 0px;
-    background-color: rgb(0, 21, 41);
+    background-color: var(--nav);
 }
 
 .logo-container{
@@ -74,7 +78,7 @@ a:hover{
     right: 10px !important;
     top: 25px !important;
     font-size: 1.2rem !important;
-    background-color:rgb(47, 27, 81);
+    background-color:var(--nav);
     border: none !important;
     padding-bottom:4px;
 }
@@ -100,12 +104,20 @@ a:hover{
 .para{
     font-size:1vw;
 }
+@media screen and (max-width:1300px) and (min-width:1000px){
+    .nav-container{
+        width:24vw;
+    }
+}
 @media screen and (max-width:1000px){
     .main{
         margin-left: 100px;
     }
     .para{
         font-size: 1.5vw;
+    }
+    .nav-container{
+        width:29.8vw;
     }
 }
 
@@ -280,6 +292,14 @@ a:hover{
     background-color: var(--bgSecondary);
 }
 
+@media screen and (max-width:1574px) and (min-width:1300px){
+    .nav-container{
+        width:20vw;
+    }
+    .navbar{
+        width:20vw;
+    }
+}
 @media screen and (max-width:1000px){
     .stats-container{
         flex-direction: column;
@@ -417,9 +437,6 @@ height:7vw;
 }
 .falsse{
     height:100vw;
-}
-.truee{
-    height: fit-content;
 }
 .footer {
     background-color: #001529;

@@ -27,11 +27,7 @@ const App = () => {
           {/* inside the main the data is change therefore we add the routes  */}
           {/* inside the routes we should add route with that component(that component only should add which you want to switch between them i.e home and setting ka bhich switch chiye toh tab route ke saath home and switch component add karo) */}
 
-          {/* <Route  path='/Cryptohunt/' element={ <Homepage/>}> */}
-            {/* during loading first it route the component with path="/" */}
-          {/* </Route> */}
-
-          <Route  path='/Cryptohunt/' element={ <Homepage/>}>
+          <Route  path='' element={ <Homepage/>}>
             {/* during loading first it route the component with path="/" */}
           </Route>
 

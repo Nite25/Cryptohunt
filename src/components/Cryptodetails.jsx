@@ -42,8 +42,12 @@ const Cryptodetails = () => {
       <Col className='coin-heading-container' style={{width:"100%"}}>
         {
       (cryptoDetails!==undefined) ? 
-      <><Title level={2} className='coin-name'>{cryptoDetails.name} ({cryptoDetails.symbol}) Price</Title>
-      <p>
+      <><Title level={2} className='coin-name'>
+        <div className="heading">
+        {cryptoDetails.name} ({cryptoDetails.symbol}) Price
+        </div>
+        </Title>
+      <p className='heading'>
         {cryptoDetails.name} live price in US dollars. Views Value Statistics,Market-Cap and Supply
       </p>
       </>
@@ -71,9 +75,11 @@ const Cryptodetails = () => {
         <Col className='coin-value-statistics'>
           <Col className="coin-value=statistics-heading">
             <Title level={3} className='coin-detailes-heading'>
+              <div className='heading'>
               {cryptoDetails?.name} Value statistics
+              </div>
             </Title>
-            <p>
+            <p className='heading'>
               An overviewing showing the stats of {cryptoDetails?.name}
             </p>
           </Col>
@@ -81,9 +87,15 @@ const Cryptodetails = () => {
             return (<Col className='coin-stats'>
             <Col className="coin-stats-name">
               <Text>{icon}</Text>
-              <Text>{title}</Text>
+              <Text>
+                {title}
+                </Text>
             </Col>
-            <Text className="stats">{value}</Text>
+            <div className='heading'>
+            <Text className="stats">
+              {value}
+              </Text>
+            </div>
             </Col>
             )
           })
@@ -94,7 +106,9 @@ const Cryptodetails = () => {
         <Col className='other-stats-info'>
           <Col className="coin-value=statistics-heading">
             <Title level={3} className='coin-detailes-heading'>
+              <div className='heading'>
               Other Statistics
+              </div>
             </Title>
             <p>
               An overviewing showing the stats of all cryptocoins
@@ -115,7 +129,9 @@ const Cryptodetails = () => {
         <Col className='coin-desc-link'>
           <Row className='coin-desc'>
             <Title level={3} className='coin-details-heading'>
+              <div className='heading'>
               Latest News of {cryptoDetails.name}
+              </div>
               <br></br>
               <br></br>
             </Title>
@@ -123,7 +139,9 @@ const Cryptodetails = () => {
           </Row>
           <Col className='coin-links'>
             <Title level={3} className='coin-details-heading'>
+              <div className='heading'>
               {cryptoDetails?.name + " Links:"}
+              </div>
             </Title>
             {cryptoDetails?.links.map((links)=>(
               <Row className='coin-link' key={links?.name}>

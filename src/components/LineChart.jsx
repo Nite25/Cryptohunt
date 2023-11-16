@@ -66,14 +66,26 @@ const LineChart = ({coinname,coinHistory,currentPrice,formatfortime}) => {
 
   return (
     <>
-        <Title level={2} className='chart-title'>Price Chart of {coinname}</Title>
+        <Title level={2} className='chart-title'>
+          <div>
+          Price Chart of {coinname}
+          </div>
+          </Title>
         <Col className='price-container'>
-<Title level={4} className='price-change'>Changes: <span className={declare1} style={{fontWeight:"400",fontSize:"20px"}}>{coinHistory?.data?.change}%</span></Title>
+<Title level={4} className='price-change'>
+<div className='heading'>
+  Changes: <span className={declare1} style={{fontWeight:"400",fontSize:"20px"}}>
+    {coinHistory?.data?.change}%</span>
+    </div>
+    </Title>
 
-<Title level={4} className='current-price'> Current Price of {coinname}:${currentPrice}</Title>
+<Title level={4} className='current-price'> 
+<div className='heading'>
+Current Price of {coinname}:${currentPrice}
+</div></Title>
         </Col>
  
-<Line data={data}></Line>
+<div className='heading'><Line data={data}></Line></div>
     </>
   )
 }
