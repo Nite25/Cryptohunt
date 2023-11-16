@@ -8,10 +8,9 @@
 # testing
 /coverage
 
-cryptoproject\src\services
 # production
 /build
-
+/src/services
 # misc
 .DS_Store
 .env.local
